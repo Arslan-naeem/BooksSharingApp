@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/down_side_radius">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            //back arrow
+            <ImageView
+                android:id="@+id/editProfile_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_back"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+            </TextView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/Editprofile_dp"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:textColorHint="@color/dark_blue"
+                app:counterTextColor="@color/dark_blue"
+                app:hintTextAppearance="@style/FlotingHintStyle">
+
+                <EditText
+                    android:id="@+id/editProfile_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/dark_blue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            //email
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:textColorHint="@color/dark_blue"
+                app:counterTextColor="@color/dark_blue"
+                app:hintTextAppearance="@style/FlotingHintStyle">
+
+                <EditText
+                    android:id="@+id/editProfile_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/dark_blue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            //password
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:textColorHint="@color/dark_blue"
+                app:counterTextColor="@color/dark_blue"
+                app:hintTextAppearance="@style/FlotingHintStyle">
+
+                <EditText
+                    android:id="@+id/editProfile_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/dark_blue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            //phone
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:textColorHint="@color/dark_blue"
+                app:counterTextColor="@color/dark_blue"
+                app:hintTextAppearance="@style/FlotingHintStyle">
+
+                <EditText
+                    android:id="@+id/editProfile_Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:textColor="@color/dark_blue" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            //phone
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:textColorHint="@color/dark_blue"
+                app:counterTextColor="@color/dark_blue"
+                app:hintTextAppearance="@style/FlotingHintStyle">
+
+                <EditText
+                    android:id="@+id/editProfile_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Postal Address"
+                    android:inputType="textPostalAddress"
+                    android:textColor="@color/dark_blue" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/EditProfile_updatebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Update"></Button>
+
+                <Button
+                    android:id="@+id/EditProfile_cancelbtn"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="@color/dark_blue"
+                    android:layout_weight="1"
+                    android:text="Cancel">
+                </Button>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
